@@ -74,7 +74,9 @@
           <instructions>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Import-Package>
-              *
+              org.springframework.osgi.*;resolution:="optional",
+              org.eclipse.gemini.blueprint.*;resolution:="optional",
+              *;version="0";resolution:=optional
             </Import-Package>
             <Export-Package>
               org.everit.jira.settings;version=1.0.0
@@ -279,6 +281,7 @@
       <groupId>org.everit.jira</groupId>
       <artifactId>jira-querydsl-support</artifactId>
       <version>1.0.1</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.atlassian.jira</groupId>

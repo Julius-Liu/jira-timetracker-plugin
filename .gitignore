@@ -6,3 +6,10 @@ target
 .fbExcludeFilterFile
 .pmd
 .pmdruleset.xml
+
+# 忽略目录
+.idea/
+target/
+
+# 忽略文件
+*.iml
